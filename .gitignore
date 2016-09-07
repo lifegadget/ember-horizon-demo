@@ -16,3 +16,5 @@
 npm-debug.log
 testem.log
 rethinkdb_data/*
+
+/config/.hz/*.toml
