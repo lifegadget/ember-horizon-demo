@@ -18,3 +18,4 @@ testem.log
 rethinkdb_data/*
 
 /config/.hz/*.toml
+*.toml
