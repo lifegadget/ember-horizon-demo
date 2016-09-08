@@ -4,14 +4,13 @@
 {{#horizon-login as |horizon|}}
 
   <p>
-    You've been authenticated{{horizon.service.id}}. To logout out press the button: 
+    You've been authenticated{{horizon.service.id}}. To logout out press the button:
     <button class="btn logout" onclick={{action horizon.logout}}>
       Logout
-      </button>
+    </button>
   </p>
   {{#if (not-eq currentPath 'chat')}}
     <p>
-      
       {{#link-to 'chat'}}Go Into Chat Room{{/link-to}}
     </p>
   {{/if}}

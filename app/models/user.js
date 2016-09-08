@@ -1,9 +1,10 @@
 import DS from 'ember-data';
-import Ember from 'ember';
-const { attr, hasMany } = Ember;
+const { attr, hasMany } = DS;
 
 export default DS.Model.extend({
   name: attr('string'),
   avatar: attr('string'),
-  messages: hasMany('message')
+  messages: hasMany('message'),
+  email: attr('string'),
+  groups: attr(),
 });

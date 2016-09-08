@@ -1,7 +1,7 @@
 <div class="message-item">
   <div class="who">
-    {{gravatar-image 
-      email='message.email' 
+    {{gravatar-image
+      email=
       class='img-circle'
       size='65'
     }}
@@ -9,9 +9,11 @@
   <div class="message-area">
     <div class="message-content">
       {{#if isEditable}}
-        <input type="text" onblur={{action 'newMessage'}}>
+        <form onsubmit={{action 'newMessage'}}>
+          <input id="new-message-input" type="text" autocomplete="off">
+        </form>
       {{else}}
-        {{message.content}}
+        {{model.content}}
       {{/if}}
     </div>
     <div class="message-time">

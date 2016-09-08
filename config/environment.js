@@ -9,7 +9,8 @@ module.exports = function(environment) {
     horizon: {
       host: 'localhost:8181',
       authType: 'token',
-      secure: true
+      secure: true,
+      realTime: true
     },
     EmberENV: {
       FEATURES: {
