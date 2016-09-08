@@ -1,0 +1,28 @@
+body {
+  margin: 2em;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+  font-family: fantasy;
+}
+
+h3 {
+  font-size: 1.6rem;
+  background: lightgrey;
+  margin: 2em;
+  padding: 0.5em;
+}
+
+.package {
+  background: hsl(0, 0%, 89%);
+  font-family: monospace;
+  padding: 0.25em;
+}
+
