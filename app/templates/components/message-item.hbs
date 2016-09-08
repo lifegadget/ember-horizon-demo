@@ -1,0 +1,26 @@
+<div class="message-item">
+  <div class="who">
+    {{gravatar-image 
+      email='message.email' 
+      class='img-circle'
+      size='65'
+    }}
+  </div>
+  <div class="message-area">
+    <div class="message-content">
+      {{#if isEditable}}
+        <input type="text" onblur={{action 'newMessage'}}>
+      {{else}}
+        {{message.content}}
+      {{/if}}
+    </div>
+    <div class="message-time">
+
+    </div>
+  </div>
+</div>
+
+
+
+
+

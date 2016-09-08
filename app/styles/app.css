@@ -15,7 +15,8 @@ h2 {
 
 h3 {
   font-size: 1.6rem;
-  background: lightgrey;
+  background: black;
+  color: white;
   margin: 2em;
   padding: 0.5em;
 }
@@ -26,3 +27,15 @@ h3 {
   padding: 0.25em;
 }
 
+.messages {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 65%;
+}
+
+.message-item {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid lightgrey;
+}

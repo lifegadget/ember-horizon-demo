@@ -1,14 +1,20 @@
 <h1><span class="package">ember-horizon</span> Demo Chat App</h1>
 <h2>Chatting you up since 2016</h2>
 
-{{#horizon-login}}
+{{#horizon-login as |horizon|}}
 
   <p>
-    You're logged in as {{currentUser.name}}.
+    You've been authenticated{{horizon.service.id}}. To logout out press the button: 
+    <button class="btn logout" onclick={{action horizon.logout}}>
+      Logout
+      </button>
   </p>
-  <p>
-    {{#link-to 'chat'}}Go Into Chat Room{{/link-to}}
-  </p>
+  {{#if (not-eq currentPath 'chat')}}
+    <p>
+      
+      {{#link-to 'chat'}}Go Into Chat Room{{/link-to}}
+    </p>
+  {{/if}}
 
 {{/horizon-login}}
 

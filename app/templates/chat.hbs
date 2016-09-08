@@ -1,3 +1,17 @@
 <h3>Chat Stream</h3>
 
-{{each message}}
+<div class="messages">
+  {{#each model as |message|}}
+
+    {{message-item 
+      model=message 
+      isEditable=false
+    }}
+
+  {{/each}}
+
+  {{message-item
+    model=(hash user=currentUser)
+    isEditable=true
+  }}
+</div>

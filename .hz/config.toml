@@ -14,9 +14,11 @@
 # 'secure' will disable HTTPS and use HTTP instead when set to 'false'
 # 'key_file' and 'cert_file' are required for serving HTTPS
 #------------------------------------------------------------------------------
-# secure = true
+secure = true
 key_file = "horizon-key.pem"
 cert_file = "horizon-cert.pem"
+auth_redirect = "http://localhost:4200"
+access_control_allow_origin = "*"
 
 
 ###############################################################################

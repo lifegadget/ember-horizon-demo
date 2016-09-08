@@ -1,0 +1,5 @@
+{
+  "globalDependencies": {
+    "blueimp-md5": "registry:dt/blueimp-md5#1.1.0+20160316155526"
+  }
+}
